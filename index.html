@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Website</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_YTzktoqvkoELqcn9hKMZo");
+    })();
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portafolio<span> Website.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Inicio</a></li>
+                <li><a href="#about" class="menu-btn">Sobre mí</a></li>
+                <li><a href="#skills" class="menu-btn">Conocimientos</a></li>
+                <li><a href="#projects" class="menu-btn">Proyectos</a></li>
+                <li><a href="#contact" class="menu-btn">Contacto</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+      <div class="max-width">
+          <div class="row">
+            <div class="home-content">
+                <div class="text-1">Hola, mi nombre es</div>
+                <div class="text-2">William Sorto</div>
+                <div class="text-3">y soy <span class="typing"></span></div>
+                <a href="#about">Sobre mí</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Sobre mí</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/desarrollo.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text"> <span class="typing-2"></span></div>
+                    <p>
+                        Hola, mi nombre es Jose William Sorto, me enfoco en el desarrollo de software, principalmente me entusiasma trabajar con tecnologías del lado del Backend, sin embargo, también tengo conocimientos sólidos en la parte del Frontend.
+                        Soy autodidacta y constantemente me gusta adquirir nuevos conocimientos y compartir todo lo aprendido.
+                    </p>
+                    <a href="CV/CV_William_Sorto.pdf" target="_blank">Descargar CV Español</a>
+                    <a href="CV/Resume_William_Sorto.pdf" target="_blank">Descargar CV Ingles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Conocimientos</h2>
+          
+            <div class="skills-content">
+                <div class="column left">
+                        <div class="info">
+                            <span>HTML</span> 
+                        </div>
+                   
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                             
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                   
+                        <div class="info">
+                            <span>Angular</span>
+                        </div>
+                                    
+                        <div class="info">
+                            <span>React</span> 
+                        </div>
+                  
+
+                </div>
+
+                
+                <!-- column center -->
+
+                <div class="column center">
+                    
+                        <div class="info">
+                            <span>Visua Basic.NET</span> 
+                        </div>
+                                    
+                        <div class="info">
+                            <span>C#</span>
+                        </div>
+                                     
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                                   
+                        <div class="info">
+                            <span>Node.JS</span>
+                        </div>
+                                   
+                        <div class="info">
+                            <span>Python</span> 
+                         </div>
+                </div>
+
+               <!--  -- -->
+                <div class="column right">
+                   
+                        <div class="info">
+                            <span>Oracle</span> 
+                        </div>
+                                    
+                        <div class="info">
+                            <span>SQL Server</span>
+                        </div>
+                                  
+                        <div class="info">
+                            <span>MySQL</span>
+                        </div>
+                                  
+                        <div class="info">
+                            <span>PostgreSQL</span>
+                        </div>
+                                
+                        <div class="info">
+                            <span>MongoDB</span> 
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section start -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">Proyectos</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/portafolio_web.png" alt="">
+                        <div class="text">Proyecto Portafolio Web</div>
+                        <p>Proyecto portafolio personal, utilizando HTML5, CSS3 y JavaScript.</p>
+                        <br />
+                        <p class="subtext"><a class="project-link" href="https://www.netlify.com/" target="_blank">Demo</a></p>
+                        <br />
+                        <a class="project-link" href="https://github.com/" target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+               <!--  <div class="card">
+                    <div class="box">
+                        <img src="images/profile-2.jpeg" alt="">
+                        <div class="text">Proyecto Ventas CRM</div>
+                        <p>CRM para el registro de ventas utilizando tecnologia MEARN Stack. </p>
+                        <br />
+                        <p class="subtext"><a class="project-link" href="https://www.netlify.com/" target="_blank">Demo</a></p>
+                        <br />
+                        <a class="project-link" href="https://github.com/" target="_blank">GitHub Repo</a>
+                    </div>
+                </div> -->
+                <div class="card">
+                    <div class="box" >
+                        <img src="images/admin_tareas.png" alt="">
+                        <div class="text">Admin. de Tareas</div>
+                        <p>Registro y administracion de tareas, utilizando tecnologia MEARN Stack.</p>
+                        <br />
+                        <p class="subtext"><a class="project-link" href="https://ecstatic-ritchie-9df38a.netlify.app/" target="_blank">Demo</a></p>
+                        <br />
+                        <a class="project-link" href="https://github.com/wsorto057/admin-tarea-servidor" target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+
+            <!--     <div class="card">
+                    <div class="box">
+                        <img src="images/profile-4.jpeg" alt="">
+                        <div class="text">Cryptocurrency App</div>
+                        <p>Monitoreo de criptomonedas realizada con tecnologia Next.js</p>
+                        <br />
+                        <p class="subtext"><a class="project-link" href="https://www.netlify.com/" target="_blank">Demo</a></p>
+                        <br />
+                        <a class="project-link" href="https://github.com/" target="_blank">GitHub Repo</a>
+                    </div>
+                </div> -->
+
+              <!--   <div class="card">
+                    <div class="box">
+                        <img src="images/profile-5.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contacto</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Formas de Contacto</div>
+                   <!--  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p> -->
+                    <div class="icons">
+                     
+                    <!--     <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Direccion</div>
+                                <div class="sub-title">San Salvador, El Salvador </div>
+                            </div>
+                        </div> -->
+                        <div class="row">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="info">
+                                <a class="contact-link" href="https://linkedin.com/in/william-sorto-alv" target="_blank">LinkedIn</a>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <i class="fab fa-twitter"></i>
+                            <div class="info">
+                                <a class="contact-link" href="https://twitter.com/william_sorto01" target="_blank">Twitter</a>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <i class="fab fa-facebook"></i>
+                            <div class="info">
+                                <a class="contact-link" href="https://www.facebook.com/william.sorto.sa/" target="_blank">Facebook</a>
+                            </div>
+                        </div> 
+                         <div class="row">
+                            <i class="fab fa-github"></i>
+                            <div class="info">
+                                <a class="contact-link" href="https://github.com/wsorto057" target="_blank">GitHub</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="div_mail" id="div_mail" >Formulario Correo</div>
+                    <form class="contact-form" id="mail_form">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" class="fullname" placeholder="Nombre" required id="from_name">
+                            </div>
+                            <div class="field email">
+                                <input type="text" class="email-input" placeholder="Email" required id="from_email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" class="subject" placeholder="Asunto" required id="from_subject">
+                        </div>
+                        <div class="field textarea">
+                            <textarea class="message" cols="30" rows="10" placeholder="Mensaje.." required id="message"></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button class="send-msg" type="submit" name="send" id="btnEnviar" onclick="sendMail()" >Enviar Mensaje</button>
+                               
+
+                        </div>
+                        <br />
+                        <label class="label_correo" id="respuesta"> * Mensaje de correo enviado con exito.</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <!-- <span>Powered By William Sorto</a> | --> <span class="far fa-copyright"></span> 2021 Derechos Reservados.</span>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
