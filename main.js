@@ -71,8 +71,8 @@ $(document).ready(function () {
   });
 });
 
-function sendMail() {
-  $("div_mail *").prop("disabled", true);
+function sendMail_v1() {
+ 
   var tempParams = {
     from_name: document.getElementById("from_name").value,
     from_email: document.getElementById("from_email").value,
@@ -90,7 +90,39 @@ function sendMail() {
         document.getElementById("from_subject").value = "";
         document.getElementById("message").value = "";
         document.getElementById("respuesta").style.display = "block";
-        $("div_mail *").prop("disabled", false);
+     
       }
     });
 }
+
+
+function sendMail() {
+  // $("div_mail *").prop("disabled", true);
+   var tempParams = {
+     from_name: document.getElementById("from_name").value,
+     from_email: document.getElementById("from_email").value,
+     from_subject: document.getElementById("from_subject").value,
+     message: document.getElementById("message").value,
+   };
+   console.log("envio de correo");
+   console.log(document.getElementById("from_name").value);
+     if((document.getElementById("from_name").value == "") || (document.getElementById("from_email").value == "") || ( document.getElementById("from_subject").value == "") || (document.getElementById("message").value == ""))
+     {
+       document.getElementById("respuesta_error").style.display = "block";
+     }
+     else{
+       emailjs
+       .send("portafolio_web", "template_portafolio_web", tempParams)
+       .then(function (res) {
+         //console.log(res.status);
+          if (res.status == "200") {
+             document.getElementById("from_name").value = "";
+             document.getElementById("from_email").value = "";
+             document.getElementById("from_subject").value = "";
+             document.getElementById("message").value = "";
+             document.getElementById("respuesta").style.display = "block";
+           //$("div_mail *").prop("disabled", false);
+         } 
+       });
+     }
+ }
